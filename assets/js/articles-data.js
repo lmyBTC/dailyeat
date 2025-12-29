@@ -645,6 +645,24 @@ const articlesData = [
         keywords: "魚油價格, 魚油評測, 魚油比較, 魚油計算機, rTG魚油價格, 魚油推薦, 魚油性價比"
     },
     {
+        id: 'card-fish-oil-faq',
+        parent: 'card-fish-oil',
+        type: '常見問題',
+        goals: ['科普知識', '安全指南'],
+        name: '魚油常見問題 FAQ',
+        en_name: 'Fish Oil FAQ',
+        func: '提供最完整的魚油補充問答',
+        status: '完整',
+        link: '/post/fish-oil-faq.html',
+        title: '魚油常見問題 (FAQ)：最詳細的補充問答全紀錄',
+        category: "other",
+        published: "2025-12-29",
+        modified: "2025-12-29",
+        tag: "常見問題",
+        description: "針對魚油補充的最完整問答集。涵蓋基礎知識、科學實證功效、建議攝取量、安全風險與不同族群的專業建議。解決您對魚油的所有疑惑。",
+        keywords: "魚油FAQ, 魚油問題, 魚油功效, 魚油副作用, 魚油怎麼吃, 魚油挑選"
+    },
+    {
         id: 'card-gaba',
         parent: 'category-archive',
         type: '機能性成分',
