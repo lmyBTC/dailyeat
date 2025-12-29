@@ -18,7 +18,7 @@
 - [文件三: 新增頁面檢查清單 (與重構步驟)](#文件三-新增頁面檢查清單-與重構步驟)
   - [快速檢查清單](#快速檢查清單)
   - [詳細步驟指引 (整合重構計畫)](#詳細步驟指引-整合重構計畫)
-- [文件四: Caregiver 營養百科 - 文章風格指引](#文件四-caregiver-營養百科---文章風格指引)
+- [文件四: 營養百科 - 文章風格指引](#文件四-營養百科---文章風格指引)
   - [第一章：核心原則](#第一章核心原則)
   - [第二章：內容策略與結構](#第二章內容策略與結構)
   - [第三章：技術與格式化規範](#第三章技術與格式化規範)
@@ -26,7 +26,7 @@
 
 ---
 
-# Caregiver 專案 - 完整開發指引
+# Dailyeat 專案 - 完整開發指引
 
 這份文件整合了專案的 API 文件、前端開發規範、新頁面建立清單以及文章寫作風格指引，旨在為所有開發與內容創作者提供一套統一、高標準的規範。
 
@@ -37,7 +37,7 @@
 ## 建構函數
 
 ```javascript
-const homepage = new CaregiverHomepage(hostElement);
+const homepage = new DailyeatHomepagehostElement);
 ```
 
 - `hostElement`: Shadow DOM 的宿主元素（必要）
@@ -76,7 +76,7 @@ homepage.destroy(); // 銷毀組件，清理資源
 ### 基本初始化
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setTheme("light")
@@ -87,7 +87,7 @@ const homepage = new CaregiverHomepage(
 ### 開發模式（包含除錯）
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setTheme("light")
@@ -103,7 +103,7 @@ console.log("除錯模式:", homepage.getDebug());
 ### 深色主題
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setTheme("dark") // 深色主題
@@ -114,7 +114,7 @@ const homepage = new CaregiverHomepage(
 ### 自訂搜尋框 Placeholder
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setSearchPlaceholder("輸入營養素名稱，例如：維生素C、鈣質...")
@@ -126,7 +126,7 @@ const homepage = new CaregiverHomepage(
 ### 批次設定
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setConfig({
@@ -156,7 +156,7 @@ homepage.setTheme("light");
 // 驗證 CSS 隔離
 const initialStyleCount = document.head.querySelectorAll("style").length;
 
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 ).initialize();
 
@@ -170,7 +170,7 @@ console.log("CSS 隔離:", initialStyleCount === finalStyleCount); // 應該是 
 ### 開啟除錯模式
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage
   document.getElementById("homepage-container")
 )
   .setDebug(true) // 關鍵：啟用除錯模式
@@ -673,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-# 文件四: Caregiver 營養百科 - 文章風格指引
+# 文件四: 營養百科 - 文章風格指引
 
 這份文件旨在為所有「營養百科」的文章建立一套統一、高標準的風格與結構。遵循此指引將有助於我們產出高品質、風格一致且對讀者極具吸引力的內容。
 

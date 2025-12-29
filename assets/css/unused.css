@@ -1,0 +1,173 @@
+/* Unused styles from fish-oil.html (Market Analysis feature) */
+
+/* Chart Container */
+.chart-wrapper {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 30px 0 50px;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+/* Code Block */
+.code-block {
+    background-color: #1f2937;
+    color: #4ade80;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.9em;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+/* Tier Cards */
+.tier-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.tier-card {
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.tier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tier-s {
+    border-color: #facc15;
+    background-color: #fefce8;
+}
+
+.tier-s h3 {
+    color: #854d0e;
+    margin-top: 0;
+}
+
+.tier-s i {
+    color: #eab308;
+}
+
+.tier-s button {
+    background-color: #eab308;
+    color: white;
+}
+
+.tier-s button:hover {
+    background-color: #ca8a04;
+}
+
+.tier-a {
+    border-color: #d1d5db;
+    background-color: #f9fafb;
+}
+
+.tier-a h3 {
+    color: #374151;
+    margin-top: 0;
+}
+
+.tier-a i {
+    color: #9ca3af;
+}
+
+.tier-a button {
+    background-color: #6b7280;
+    color: white;
+}
+
+.tier-a button:hover {
+    background-color: #4b5563;
+}
+
+.tier-b {
+    border-color: #fdba74;
+    background-color: #fff7ed;
+}
+
+.tier-b h3 {
+    color: #9a3412;
+    margin-top: 0;
+}
+
+.tier-b i {
+    color: #f97316;
+}
+
+.tier-b button {
+    background-color: #f97316;
+    color: white;
+}
+
+.tier-b button:hover {
+    background-color: #ea580c;
+}
+
+.tier-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tier-icon {
+    font-size: 1.8em;
+    margin-right: 12px;
+}
+
+.tier-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+@media(min-width: 640px) {
+    .tier-btn {
+        width: auto;
+    }
+}
+
+/* Calculator Section */
+.calculator-section {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.calculator-title {
+    margin-top: 0;
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.mobile-toc-toggle {
+    display: none !important;
+}

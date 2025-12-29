@@ -627,6 +627,24 @@ const articlesData = [
         keywords: "魚油, 魚油功效, 魚油推薦, Omega-3, EPA, DHA, 魚油怎麼選, 三酸甘油酯, 心血管保健, 大腦健康"
     },
     {
+        id: 'card-fish-oil-market-analysis',
+        parent: 'card-fish-oil',
+        type: '深度評測',
+        goals: ['聰明消費', '精準選購'],
+        name: '魚油市場評測',
+        en_name: 'Market Analysis',
+        func: '提供真實成本計算與市售產品評比',
+        status: '完整',
+        link: '/post/fish-oil-market-analysis.html',
+        title: '魚油市場真相：真實成本與規格評測',
+        category: "other",
+        published: "2025-12-29",
+        modified: "2025-12-29",
+        tag: "深度評測",
+        description: "深度解析市售魚油的真實成本與規格。我們分析了各大品牌的濃度、型態與價格，提供透明的性價比評測與即時計算工具，助您破解行銷迷思，做出最聰明的購買選擇。",
+        keywords: "魚油價格, 魚油評測, 魚油比較, 魚油計算機, rTG魚油價格, 魚油推薦, 魚油性價比"
+    },
+    {
         id: 'card-gaba',
         parent: 'category-archive',
         type: '機能性成分',

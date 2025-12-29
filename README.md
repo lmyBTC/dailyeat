@@ -42,7 +42,7 @@ homepage.destroy(); // 銷毀組件，清理資源
 ### 基本初始化
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setTheme("light")
@@ -53,7 +53,7 @@ const homepage = new CaregiverHomepage(
 ### 開發模式（包含除錯）
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setTheme("light")
@@ -69,7 +69,7 @@ console.log("除錯模式:", homepage.getDebug());
 ### 深色主題
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setTheme("dark") // 深色主題
@@ -80,7 +80,7 @@ const homepage = new CaregiverHomepage(
 ### 自訂搜尋框 Placeholder
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setSearchPlaceholder("輸入營養素名稱，例如：維生素C、鈣質...")
@@ -92,7 +92,7 @@ const homepage = new CaregiverHomepage(
 ### 批次設定
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setConfig({
@@ -146,7 +146,7 @@ homepage.destroy();
 // 驗證 CSS 隔離
 const initialStyleCount = document.head.querySelectorAll("style").length;
 
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 ).initialize();
 
@@ -186,7 +186,7 @@ console.log("CSS 隔離:", initialStyleCount === finalStyleCount); // 應該是 
 ### 開啟除錯模式
 
 ```javascript
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setDebug(true) // 關鍵：啟用除錯模式
@@ -206,7 +206,7 @@ const homepage = new CaregiverHomepage(
 
 ```javascript
 // 正式環境應關閉除錯模式
-const homepage = new CaregiverHomepage(
+const homepage = new DailyeatHomepage(
   document.getElementById("homepage-container")
 )
   .setDebug(false) // 關閉除錯訊息
@@ -216,28 +216,6 @@ const homepage = new CaregiverHomepage(
 ## 互動式健康工具組件 (Health Tools)
 
 本專案開發了一系列基於醫學實證的互動式工具，封裝為獨立的 JavaScript 類別，並使用 Shadow DOM 隔離樣式。
-
-### 1. 咖啡因耐受度計算機 (`CaffeineCalculator`)
-- **功能**：根據體重與敏感度計算每日安全攝取限量，並提供飲品換算。
-- **標準**：參考 FDA 與 EFSA 安全指引。
-
-### 2. 魚油真實成本計算機 (`FishOilCalculator`)
-- **功能**：屏除行銷標語，直觀計算「每 1000mg Omega-3」的純粹成本。
-- **核心**：幫助使用者辨識性價比均衡的產品。
-
-### 3. ASCVD 10年心血管風險評估器 (`CardioRiskCalculator`)
-- **功能**：計算十年內動脈粥狀硬化性心血管疾病的發生風險。
-- **演算法**：基於 2013 AHA/ACC Pooled Cohort Equations。
-
-### 4. 鈉鉀離子平衡比計算機 (`SodiumPotassiumCalc`)
-- **功能**：評估飲食中的鈉鉀比例，並提供對應的平衡建議。
-- **標準**：依循 WHO 與 AHA 關於血壓控管的礦物質攝取建議。
-
-### 5. Zone 2 運動心率計算器 (`Zone2Calculator`)
-- **功能**：鎖定代謝靈活度與血管修復的最佳訓練區間。
-- **演算法**：支援 Maffetone 180 與 Karvonen 雙重公式。
-
-這些工具統一於 `category/tools.html` 中載入與初始化。
 
 ## 專案結構
 
@@ -287,6 +265,17 @@ dailyeat/
 ├── CLAUDE.md                     # 開發規範
 └── README.md                     # 本文件
 ```
+
+### 管理文件流程 (Management Document Workflow)
+
+為了有效管理專案任務與進度，我們採用以下文件流程規範：
+
+1.  **管理文件存放**: 所有管理文件皆存放於 `doc_task/` 資料夾中。
+2.  **待辦清單 (Todo List)**: `doc_task/todo.md` 用於記錄主要工作摘要與進度追蹤。
+3.  **任務規劃與執行文件**: 每項完整的工作規劃與執行細節會獨立存放於 `doc_task/` 下的 `task_任務名稱.md` 文件中 (例如：`task_更新品牌名稱.md`)。
+4.  **新任務建立**: 當有新任務需求時，應使用 `doc_task/task_template.md` 範本建立新的 `task_任務名稱.md` 規劃執行文件。
+5.  **進度回寫**: 任務完成後，其進度摘要會回寫至 `doc_task/todo.md` 進行更新。
+6.  **文件歸檔**: 已完成的任務文件 (例如 `task_更新品牌名稱.md`) 將會移動至 `doc_task/task_archive/` 資料夾中進行保存與歸檔。
 
 ## 重要注意事項
 

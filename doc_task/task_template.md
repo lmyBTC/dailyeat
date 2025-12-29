@@ -28,7 +28,7 @@
 列出此任務將會新增或修改的檔案。
 
 ```
-caregiver/
+dailyeat/
 ├── brand/
 │   └── new-brand-page.html  (新增)
 └── assets/
