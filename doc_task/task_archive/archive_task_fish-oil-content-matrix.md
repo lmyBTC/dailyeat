@@ -1,66 +1,63 @@
-# 任務名稱：魚油 (Omega-3) 權威網站內容矩陣建置
+# 任務名稱：魚油 (Omega-3) 權威網站內容矩陣建置 (2025 Revised)
 
-**狀態**: `開發中`
+**狀態**: `已上線`
 **負責人**: @Antigravity
-**預計完成日期**: 2025-01-15
-**核心目標**: 建立以用戶體驗為核心的魚油 Topical Authority，解決使用者從「認知」到「購買」再到「食用」的全流程痛點。
+**更新日期**: 2025-12-31
+**核心目標**: 建立以用戶體驗為核心的魚油 Topical Authority，透過「Hub (入口) -> Core (核心) -> Verticals (分眾)」的三層架構，解決使用者全方位需求。
 
 ---
 
 ## 1. 策略思維 (Strategic Mindset)
 
-我們不只是「寫文章」，而是要「解決問題」。
-- **SEO 策略**: Hub Page 建立廣度 (Broad Intent)，Spoke Page 建立深度 (Specific Intent)。
-- **UX 策略**: 
-    - 減少廢話，直接給答案 (Answer First)。
-    - 善用圖表、比較表、計算機工具。
-    - 針對不同受眾 (孕婦、老人、新手) 提供客製化建議。
+因應內容擴充，我們採用更立體的**三層式導流架構**：
+- **Level 1: The Hub (入口)** - 視覺化策展頁面，作為 Header 導航的頂層入口，負責分流。
+- **Level 2: The Core (觀念)** - `fish-oil.html` 作為 SEO 核心頁，承接 "魚油功效" 等大流量關鍵字，提供完整基礎知識。
+- **Level 3: The Verticals (深度)** - 針對特定族群 (分眾) 或 功能 (工具/評測) 提供深度解答。
 
 ## 2. 內容矩陣架構 (Content Matrix)
 
-| 類型 | 頁面名稱 | 讀者痛點/意圖 | 關鍵字佈局 |
+### Level 1: 專題入口 (The Hub)
+| 頁面 | 檔案路徑 | 定位與功能 |
+| :--- | :--- | :--- |
+| **魚油專題首頁** | `post/fish-oil-hubpage.html` | **[Header Entry]** 視覺化雜誌風格首頁。不側重長文 SEO，而是透過 "Curated Paths" (精選路徑)、"Deep Dive" (深度特寫) 與 "互動工具" 引導使用者進入適合的子頁面。 |
+
+### Level 2: 核心觀念 (The Core)
+| 頁面 | 檔案路徑 | 定位與功能 |
+| :--- | :--- | :--- |
+| **基礎保養指南** | `post/fish-oil.html` | **[Traffic Anchor]** SEO 流量主力。涵蓋 80% 的使用情境，從功效、rTG 型態到挑選標準的完整懶人包。適合 "新手" 或 "一般搜尋者"。 |
+
+### Level 3: 深度分眾與工具 (Verticals & Utilities)
+
+#### A. 分眾指南 (For Whom)
+| 頁面 | 檔案路徑 | 重點受眾 | 關鍵痛點 |
 | :--- | :--- | :--- | :--- |
-| **Hub** | **魚油知識百科 (2025 全攻略)** | 想補充 Omega-3 但完全沒概念，需要懶人包。 | 魚油推薦, 功效, Omega-3 |
-| **Spoke 1** | **型態大對決 (rTG/TG/EE)** | 被專有名詞搞混，想知道哪個吸收好、CP值高。 | rTG魚油, 吸收率, EE型態 |
-| **Spoke 2** | **品質辨識 (濃度/檢驗)** | 怕吃到重金屬、塑化劑，不想買到濫竽充數的產品。 | 魚油濃度, IFOS, 魚油檢驗 |
-| **Spoke 3** | **受眾建議 (孕婦/兒童)** | 為了寶寶好，需要極高的安全感與精準劑量建議。 | 孕婦魚油, 兒童魚油, DHA |
-| **Spoke 4** | **受眾建議 (銀髮/三高)** | 解決三高問題，擔心藥物交互作用 (抗凝血劑)。 | 魚油降血脂, 老人魚油, 抗凝血 |
-| **Spoke 5** | **市場真相 (評測/計算)** | **[已完成]** 準備購買，想比價、看真實規格分析。 | 魚油評測, 魚油價格, 魚油排名 |
-| **Spoke 6** | **來源比較 (魚/藻/蝦)** | 素食者，或在磷蝦油與魚油間猶豫。 | 藻油, 磷蝦油, 素食魚油 |
-| **Spoke 7** | **食用指南 (吃法/迷思)** | 買了不知道怎麼吃，或吃了拉肚子想找原因。 | 魚油什麼時候吃, 副作用 |
-| **FAQ** | **常見問題集** | **[已完成]** 快速查找特定零碎問題的解答。 | 魚油FAQ, 魚油問題 |
+| **全齡族群總覽** | `post/fish-oil-groups.html` | **孕婦、兒童、學生、成人** | 整合性分眾頁面。針對不同生命階段 (Life Stages) 提供劑量與選購建議 (如孕婦需注意 DHA 比例)。 |
+| **銀髮心血管專區** | `post/fish-oil-senior.html` | **銀髮族、三高族群** | 專注於心血管保養。重點解決「藥物交互作用」(抗凝血劑) 與「高濃度 EPA」需求。 |
 
-## 3. 執行計畫 (Execution Plan)
+#### B. 專業知識 (Technical Deep Dive)
+| 頁面 | 檔案路徑 | 核心議題 |
+| :--- | :--- | :--- |
+| **型態大解析** | `post/fish-oil-structure.html` | rTG vs EE vs TG 的終極比較 (吸收率與 CP 值)。 |
+| **品質與檢驗** | `post/fish-oil-quality.html` | IFOS 認證、重金屬檢測、濃度計算公式。 |
+| **來源與環保** | `post/fish-oil-sources.html` | 魚油 vs 藻油 vs 磷蝦油。素食者解決方案。 |
 
-### Phase 1: Hub Page 權威化 (流量核心) - `post/fish-oil.html`
-- [x] **擴充痛點切入前言**：連結現代飲食習慣，引發共鳴。
-- [x] **視覺化「EPA vs DHA」**：製作圖表說明兩者功能差異 (護心 vs 護腦)。
-- [x] **深化「挑選黃金標準」**：不僅列點，更要解釋「為什麼」(Why it matters)。
-- [x] **矩陣導流設計**：在各章節加入高關聯性的 CTA 卡片，引導至 Spoke Pages。
+#### C. 實用工具與評測 (Utilities)
+| 頁面 | 檔案路徑 | 功能說明 |
+| :--- | :--- | :--- |
+| **挑選工具箱** | `post/fish-oil-tools.html` | **[Interactive]** 包含「劑量計算機」、「成分分析器」與「智能篩選器」。讓數據說話。 |
+| **市場評測** | `post/fish-oil-market-analysis.html` | 編輯嚴選市售產品分析與比較 (無廣告導向)。 |
+| **食用指南** | `post/fish-oil-guide.html` | 何時吃？怎麼吃？副作用排除 (拉肚子/長痘痘)。 |
+| **常見問答** | `post/fish-oil-faq.html` | 快速解答零碎問題 (FAQ Schema Optimized)。 |
 
-### Phase 2: 技術與品質破除迷思 (建立信任)
-- [x] **建立 Spoke 1 (型態)**：製作「吸收率 vs 價格」比較表，破解 rTG 神話與 EE 實用性。
-- [x] **建立 Spoke 2 (品質)**：教導「濃度計算公式」與「IFOS 證書解讀」，避免讀者繳智商稅。
+## 3. 導流邏輯 (Navigation Flow)
 
-### Phase 3: 分眾場景精準行銷 (提升轉化)
-- [x] **建立 Spoke 3 (孕婦/兒童)**：強調「安全性」與「DHA 比例」，解決媽媽的焦慮。
-- [x] **建立 Spoke 4 (銀髮)**：強調「藥物交互作用」警語與「吞嚥友善」顆粒建議。
-- [x] **建立 Spoke 6 (來源)**：客觀分析環保議題與素食選擇，不盲目推銷魚油。
+1.  **Header Bar**: 連結至 `fish-oil-hubpage.html`。
+2.  **Hub Page**: 提供前往 `fish-oil.html` (新手)、`fish-oil-groups.html` (分眾找答案)、`fish-oil-tools.html` (工具) 的快速卡片。
+3.  **Core Page (`fish-oil.html`)**: 在各章節末端嵌入 `Related Article Cards`，將想要深入了解 "rTG" 或 "孕婦吃法" 的人導流至對應的 Vertical Page。
 
-### Phase 4: 售後服務與體驗優化 (長尾流量)
-- [x] **建立 Spoke 7 (食用指南)**：解決「拉肚子」、「長痘痘」等真實使用痛點 (Troubleshooting)。
-- [x] **全站整合**：檢查所有內部連結，確保 `articles-data.js` 與 Sitemap 同步更新。
+## 4. 驗收標準 (Revised)
 
-
-## 4. 影響評估 (Impact Assessment)
-
-### 相依性
-- 依賴 `article.css` 與 `article-fish-oil.js` 作為基礎樣式與邏輯。
-- 所有新頁面需引用 `RelatedArticlesComponent` 以強化矩陣連結。
-
-## 5. 驗收標準 (Acceptance Criteria)
-
-- [ ] 所有大綱中提到的 1 個 Hub 與 7 個 Spoke 均完成並正確發佈。
-- [ ] 頁面之間具備良好的內部連結 (Internal Linking) 邏輯。
-- [ ] SEO 元數據 (Title, Description, Keywords) 依據大綱設定完成。
-- [ ] 符合專案規範：Shadow DOM、原生 JS、無外部框架依賴。
+- [x] **Hub Page 上線**: 確保 `fish-oil-hubpage.html` 視覺風格符合 Modern Editorial，且所有連結正確。
+- [x] **Core Page 定位**: 確認 `fish-oil.html` 已移除過度細碎的分眾內容，專注於通用性知識導引。
+- [x] **Verticals 完整性**: 確認 Groups 與 Senior 頁面內容不與 Core Page 重複，而是更深入。
+- [x] **Tools 功能正常**: 計算機與篩選器需能正確運作並提供有價值的結果。
